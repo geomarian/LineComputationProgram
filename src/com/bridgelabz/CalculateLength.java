@@ -21,14 +21,23 @@ public class CalculateLength {
 		System.out.println("length of the line one is: " + length1);
 
      
-		int a1 = 8;
-		int b1 = 6;
-		int a2 = 7;
-		int b2 = 78;
+		int a1 = 6;
+		int b1 = 9;
+		int a2 = 10;
+		int b2 = 12;
 		double length2 = Math.sqrt((a2-a1)*(a2-a1) + (b2-b1)*(b2-b1));
 		System.out.println("length of line two is: "+length2);
 		
-
+		String str1 = Double.toString(length1);
+    	String str2 = Double.toString(length2);
+    	
+    	boolean eq = str1.equals(str2);
+    	if(eq==true) {
+    		System.out.println("Line has equal length");
+    	}
+    	else {
+    		System.out.println("Line not matched");
+    	}
 	}
+
 }
-	
